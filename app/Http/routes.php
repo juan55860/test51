@@ -1,5 +1,7 @@
 <?php
 
+include(__DIR__.'\Routes\BaseRoutes.php');
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -12,7 +14,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('app');
 });
 
 Route::post('/testing', function()
